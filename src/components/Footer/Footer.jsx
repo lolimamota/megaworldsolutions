@@ -2,7 +2,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <>
+      <p>Mega World Solutions - Todos os direitos reservados - 2025</p>
+      <p>Desenvolvido por Lorrayne Mota</p>
+    </>
   )
 }
 
