@@ -3,12 +3,14 @@
 .headerStyle{
     padding: 2vw;
     background-color: mixin.$headerColor;
-    
+
+    width: 100%;
+
     @include mixin.flex($justify: space-around);
 };
 
 .menuUl{
-    width: 35vw;
+    width: 30vw;
 
     a{
         text-decoration: none;
@@ -21,10 +23,11 @@
 };
 
 .logoFig{
+    width: 10vw;
 
     img{
         width: 5vw;
     }
 
-    @include mixin.flex($align: center)
+    @include mixin.flex($align: center, $justify: flex-end)
 }
