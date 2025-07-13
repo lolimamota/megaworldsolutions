@@ -1,0 +1,19 @@
+@mixin H1($fontsize: clamp(1rem, 10vw + 1em, 2rem)) {
+    font-size: $fontsize;
+    font-weight: 400
+};
+
+@mixin H2($fontsize: clamp(1rem, 10vw + 1em, 1.5rem)) {
+    font-size: $fontsize;
+    font-weight: 300
+};
+
+@mixin H3($fontsize: clamp(.5rem, 10vw + 1em, 1rem)) {
+    font-size: $fontsize;
+    font-weight: 200
+};
+
+@mixin Texts($fontsize: clamp(.5rem, 10vw + 1em, 1.2rem)) {
+    font-size: $fontsize;
+    font-weight: 100
+};

@@ -1,18 +1,32 @@
 @use '../SCSS/mixins.module.scss' as mixin;
 
 .headerStyle{
+    padding: 2vw;
     border: solid red;
-
-    @include mixin.flex($align: center)
+    background-color: transparent;
+    @include mixin.flex($justify: space-around);
 };
 
-.menuSec{
+.menuNav{
     border: solid yellow;
-}
+    width: 25vw;
+
+    a{
+        text-decoration: none;
+        color: black;
+
+        @include mixin.H1();
+    }
+
+    @include mixin.flex($justify: space-between);
+};
 
 .logoFig{
     border: solid blue;
+
     img{
-        width: 8vw;
+        width: 5vw;
     }
+
+    @include mixin.flex($align: center)
 }
