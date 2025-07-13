@@ -1,5 +1,9 @@
+@use '../SCSS/mixins.module.scss' as mixin;
+
 .headerStyle{
     border: solid red;
+
+    @include mixin.flex($align: center)
 };
 
 .menuSec{
@@ -9,6 +13,6 @@
 .logoFig{
     border: solid blue;
     img{
-        width: 10vw;
+        width: 8vw;
     }
 }
