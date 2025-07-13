@@ -1,12 +1,23 @@
-import React from 'react';
+//IMPORTS LIBRARY
+
+//IMPORTS SCSS
+import '../../global.scss';
+import S from '../scss/styleHeader/header.scss';
+
+//IMPORTS IMG
+import Logo from "../../assets/LOGO.png";
 
 function Header() {
   return (
-    <>
-    <a href="/">Home</a>
-    <a href="#budget">Orçamento</a>
-    <img src='./src/assets/LOGO.png' alt='Logo da Mega World Solutions, onde as letras estão em branco e escla decrescente de tamanho, dentro da representação de um sol nas cores azul e amarelo'/>
-    </>
+    <header className={S.headerStyle}>
+      <section className={S.menuSec}>
+        <a href="/">Home</a>
+        <a href="#budget">Orçamento</a>
+      </section>
+      <figure className={S.logoFig}>
+        <img src={Logo} alt='Logo da Mega World Solutions, onde as letras estão em branco e escla decrescente de tamanho, dentro da representação de um sol nas cores azul e amarelo' />
+      </figure>
+    </ header>
   )
 }
 
