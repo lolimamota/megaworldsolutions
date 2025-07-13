@@ -2,13 +2,12 @@
 
 .headerStyle{
     padding: 2vw;
-    border: solid red;
-    background-color: transparent;
+    background-color: mixin.$headerColor;
+    
     @include mixin.flex($justify: space-around);
 };
 
 .menuUl{
-    border: solid yellow;
     width: 35vw;
 
     a{
@@ -22,7 +21,6 @@
 };
 
 .logoFig{
-    border: solid blue;
 
     img{
         width: 5vw;
