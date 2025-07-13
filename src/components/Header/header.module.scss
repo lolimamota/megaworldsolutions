@@ -7,9 +7,9 @@
     @include mixin.flex($justify: space-around);
 };
 
-.menuNav{
+.menuUl{
     border: solid yellow;
-    width: 25vw;
+    width: 35vw;
 
     a{
         text-decoration: none;

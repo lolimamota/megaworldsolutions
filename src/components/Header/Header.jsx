@@ -10,8 +10,8 @@ import Logo from "../../assets/LOGO.png";
 function Header() {
   return (
     <header className={S.headerStyle}>
-        <nav className={S.menuNav}>
-          <ul>
+        <nav >
+          <ul className={S.menuUl}>
             <li>
               <a href="/">Home</a>
             </li>
