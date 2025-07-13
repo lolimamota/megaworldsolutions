@@ -2,7 +2,7 @@
 
 //IMPORTS SCSS
 import '../../global.scss';
-import S from '../scss/styleHeader/header.scss';
+import S from './header.module.scss';
 
 //IMPORTS IMG
 import Logo from "../../assets/LOGO.png";
