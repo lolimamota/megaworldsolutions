@@ -1,8 +1,14 @@
-import React from 'react'
+// IMPORTS LIBRARY
+
+// IMPORTS STYLES
+import '../../global.scss';
+import S from './main.module.scss';
+
+
 
 function Main() {
   return (
-    <>
+    <main className={S.styleMain}>
       <section className='Home'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl velit, ultricies in semper non, pulvinar euismod nibh. Vivamus tincidunt dignissim urna, ac posuere augue porttitor vel. Mauris dapibus, erat a pulvinar pharetra, tellus lacus fringilla erat, non eleifend urna nunc eget metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean a sem et nibh tempor vestibulum a tincidunt ex. </p>
         <div className='laranja'>
@@ -38,7 +44,7 @@ function Main() {
           </label>
         </form>
       </section>
-    </>
+    </ main>
   )
 }
 

@@ -1,7 +1,6 @@
 @use '../SCSS/mixins.module.scss' as mixin;
 
 .footerStyle{
-    border: solid red;
     background-color: mixin.$footerColor;
     color: mixin.$bgColor;
 
