@@ -1,5 +1,4 @@
 //IMPORT PRICIPAIS E EXTENSÕES
-
 import React from 'react';
 
 // IMPORT DOS ESTILOS
@@ -18,6 +17,7 @@ function App() {
     <Header />
     <Main />
     <Footer />
+    <div className='orange'></div>
     </>
   )
 }

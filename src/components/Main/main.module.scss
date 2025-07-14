@@ -1,3 +1,11 @@
+@use '../SCSS/mixins.module.scss' as mixin;
+
 .styleMain{
     border: solid red;
-}
+};
+
+// .orange{
+//     height: 100%;
+//     width: 100%;
+//     background-color: mixin.$secondColor;
+// }
