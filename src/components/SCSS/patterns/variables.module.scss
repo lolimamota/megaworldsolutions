@@ -1,0 +1,21 @@
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin mqMobile{
+    @media screen and (min-width: break.$mobile) and (max-width: break.$tablet) {
+        @content;
+    };
+}
+
+@mixin mqTablet{
+    @media screen and (min-width: break.$tablet) and (max-width: break.$desktop){
+        @content
+    };
+}
+
+@mixin mqDesktop{
+    @media screen and (min-width: break.$desktop) {
+        @content
+    };
+}
