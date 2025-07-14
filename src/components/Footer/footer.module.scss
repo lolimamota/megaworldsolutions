@@ -1,0 +1,10 @@
+@use '../SCSS/mixins.module.scss' as mixin;
+
+.footerStyle{
+    border: solid red;
+    background-color: mixin.$footerColor;
+
+    @include mixin.flex($align: center, $justify: center, $direction: column, $gap: .5rem);
+
+    @include mixin.H3();
+}
