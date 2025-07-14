@@ -3,6 +3,7 @@
 .footerStyle{
     border: solid red;
     background-color: mixin.$footerColor;
+    color: mixin.$bgColor;
 
     @include mixin.flex($align: center, $justify: center, $direction: column, $gap: .5rem);
 
