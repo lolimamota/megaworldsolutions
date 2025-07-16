@@ -2,7 +2,7 @@
 import React from 'react';
 
 // IMPORT DOS ESTILOS
-
+import S from './components/SCSS/app.module.scss';
 import "../src/global.scss";
 
 // IMPORT DOS COMPONENTES
@@ -14,10 +14,11 @@ import Footer from './components/Footer/Footer.jsx';
 function App() {
   return (
     <>
+    <div className={S.orange}>
     <Header />
     <Main />
     <Footer />
-    <div className='orange'></div>
+    </div>
     </>
   )
 }
