@@ -17,3 +17,13 @@ html{
 img{
     width: 100%;
 }
+
+body{
+    background-image: url("../src/assets/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-position-x: right;
+    background-position-y: -50vh;
+    
+}
