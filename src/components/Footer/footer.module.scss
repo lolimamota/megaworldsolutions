@@ -7,4 +7,9 @@
     @include mixin.flex($align: center, $justify: center, $direction: column, $gap: .5rem);
 
     @include mixin.H3();
+
+    // TESTE DE POSITION
+
+    position: absolute;
+    z-index: 1;
 }

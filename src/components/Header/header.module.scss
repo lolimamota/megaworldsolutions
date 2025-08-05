@@ -7,6 +7,11 @@
     width: 100%;
 
     @include mixin.flex($justify: space-around);
+
+    // TESTE DE POSITION
+
+    position: absolute;
+    z-index: 1;
 };
 
 .menuUl{
