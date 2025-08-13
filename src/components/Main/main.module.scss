@@ -1,17 +1,21 @@
 @use '../SCSS/mixins.module.scss' as mixin;
 
-.background{
+.bgSection1{
     position: relative;
     z-index: -1;
-
-    background-color: mixin.$secondColor;
-    border-radius: 0 100% 0 0;
 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr 1fr;
-    height: 96vh;
+    height: 100vh;
 };
+
+.orangeSection1{
+    background-color: mixin.$secondColor;
+    border-radius: 0 100% 0 0;
+    grid-column: 1/11;
+    grid-row: 1/3;
+}
 
 .contentPrinciple{
     border: solid red;
