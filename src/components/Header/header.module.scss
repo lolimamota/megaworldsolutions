@@ -10,8 +10,9 @@
 
     // TESTE DE POSITION
 
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
 };
 
 .menuUl{
