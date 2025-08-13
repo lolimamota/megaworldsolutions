@@ -4,6 +4,9 @@ function Main() {
   return (
     <main>
       <section className="background">
+        <div className='orange'>
+
+        </div>
 
       </section>
       <section className="contentPrinciple">
