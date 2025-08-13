@@ -1,17 +1,1 @@
 @use '../SCSS/mixins.module.scss' as mixin;
-
-.styleMain{
-    border: solid red;
-
-    // TESTE DE POSITION
-
-    position: relative;
-    z-index: -1;
-};
-
-.orange{
-    // te aconselho a criar um componente separado pra essa background ou alinhar ela pra não empurrar o footer
-    height: 93vh;
-    background-color: mixin.$secondColor;
-    border-radius: 0 100% 0 0;
-}
