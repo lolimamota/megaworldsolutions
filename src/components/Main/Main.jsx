@@ -7,9 +7,20 @@ import * as S from '../../components/Main/main.module.scss';
 function Main() {
   return (
     <main>
-      <section className={S.bgSection1}>
-        <div className={S.orangeSection1}>
-          <p className={S.contentPrinciple}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat sequi optio sed sit nisi tempore a qui repudiandae officia porro iusto cumque, aperiam tempora inventore voluptatum vel vitae, iure illum! Itaque delectus minus earum consequatur perspiciatis quos cumque labore saepe.</p>
+      <section className={S.imgBg}>
+        <div className={S.orangeBg}>
+          <h1 className={S.titleH1}>
+            Especialista em soluções em energia elétrica e solar
+          </h1>
+          <h2 className={S.titleH2}>
+            Produtos, projetos e serviços em um só lugar!
+          </h2>
+          <h3 className={S.titleH3}>
+            Padronista
+          </h3>
+          <p className={S.text}>
+            Deixe a energia elétrica chegar na sua casa, com a qualidade e segurança que você precisa. Instalação de padrão da CEMIG, dentro das normas, tendo material incluso.
+          </p>
         </div>
       </section>
       <section className={S.forms}>
