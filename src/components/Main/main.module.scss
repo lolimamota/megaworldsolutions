@@ -6,7 +6,9 @@
     background-size: contain;
     background-position: right;
     height: 100vh;
-};
+}
+
+;
 
 .orangeBg {
     background-color: mixin.$secondColor;
@@ -22,38 +24,130 @@
         grid-column: 1/4;
         grid-row: 2/3;
         margin-left: 10vw;
-    };
+    }
+
+    ;
 
     .homeBtn {
         grid-column: 2/3;
         grid-row: 3/4;
         text-align: center;
-        
 
-        a{
-            border: solid .1vw purple;
+
+        // a {
+        //     border: solid .1vw purple;
+        //     border-radius: 12px;
+        //     text-decoration: none;
+        //     color: mixin.$firstColor;
+        //     padding: 2vh;
+
+        //     @include mixin.H3();
+
+        //     &:hover {
+        //         transform: scale(1.05);
+        //         transition: transform 0.3s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+        //     }
+
+
+        // a {
+        //     display: inline-block;
+        //     border: solid .1vw purple;
+        //     border-radius: 12px;
+        //     text-decoration: none;
+        //     color: mixin.$firstColor;
+        //     padding: 2vh;
+
+        //     // Transição no estado normal
+        //     transition: transform 0.3s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+
+        //     @include mixin.H3();
+
+        //     &:hover {
+        //         transform: scale(1.05);
+        //     }
+
+        // }
+
+
+        // a {
+        //     display: inline-block;
+        //     border: solid .1vw purple;
+        //     border-radius: 12px;
+        //     text-decoration: none;
+        //     color: mixin.$firstColor;
+        //     padding: 2vh;
+        //     background-color: transparent;
+
+        //     // Transições no estado normal
+        //     transition:
+        //         transform 0.3s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%),
+        //         background-color 0.3s ease,
+        //         color 0.3s ease,
+        //         box-shadow 0.3s ease;
+
+        //     @include mixin.H3();
+
+        //     &:hover {
+        //         transform: scale(1.05);
+        //         background-color: purple; // Ou use uma variável como mixin.$primaryColor
+        //         color: #FFF;
+        //         border-color: purple;
+        //         box-shadow: 0 0 20px rgba(128, 0, 128, 0.6),
+        //             0 0 40px rgba(128, 0, 128, 0.4),
+        //             0 0 60px rgba(128, 0, 128, 0.2);
+        //     }
+            
+
+
+        a {
+            display: inline-block;
+            border: .1vw mixin.$footerColor;
             border-radius: 12px;
             text-decoration: none;
             color: mixin.$firstColor;
             padding: 2vh;
+            background-color: transparent;
+            
+            // Transições no estado normal
+            transition: 
+                transform 0.3s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%),
+                background-color 0.3s ease,
+                color 0.3s ease,
+                box-shadow 0.3s ease;
 
             @include mixin.H3();
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: mixin.$footerColor;
+                color: #FFF;
+                border-color: mixin.$footerColor;
+                box-shadow: 0 0 20px rgba(77, 84, 148, 0.6), 
+                            0 0 40px rgba(77, 84, 148, 0.4),
+                            0 0 60px rgba(77, 84, 148, 0.2);
+            }
+
         }
-    };
-};
+    }
+}
+    ;
 
 
 
-.titleH1 {
-    color: mixin.$firstColor;
-    @include mixin.H1();
-};
+    .titleH1 {
+        color: mixin.$firstColor;
+        @include mixin.H1();
+    }
 
-.titleH2 {
-    color: mixin.$firstColor;
-    @include mixin.H2();
-};
+    ;
 
-.forms {
-    border: solid red;
-};
+    .titleH2 {
+        color: mixin.$firstColor;
+        @include mixin.H2();
+    }
+
+    ;
+
+    .forms {
+        border: solid red;
+    }
