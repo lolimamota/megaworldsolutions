@@ -9,22 +9,19 @@ function Main() {
     <main>
       <section className={S.imgBg}>
         <div className={S.orangeBg}>
-          <h1 className={S.titleH1}>
-            Especialista em soluções em energia elétrica e solar
-          </h1>
-          <h2 className={S.titleH2}>
-            Produtos, projetos e serviços em um só lugar!
-          </h2>
-          <h3 className={S.titleH3}>
-            Padronista
-          </h3>
-          <p className={S.text}>
-            Deixe a energia elétrica chegar na sua casa, com a qualidade e segurança que você precisa. Instalação de padrão da CEMIG, dentro das normas, tendo material incluso.
-          </p>
+          <div className={S.homeText}>
+            <h1 className={S.titleH1}>
+              Energia solar com experiência de verdade.
+            </h1>
+            <h2 className={S.titleH2}>
+              Somos uma empresa 100% mineira, com especialistas que somam mais de 12 anos no mercado.
+              De Belo Horizonte e Betim a qualquer ponto de Minas Gerais, entregamos soluções completas em energia solar.
+            </h2>
+          </div>
         </div>
       </section>
       <section className={S.forms}>
-        
+
       </section>
     </main>
   )

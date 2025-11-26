@@ -7,7 +7,7 @@
 
     @include mixin.flex($align: center, $justify: center, $direction: column, $gap: .5rem);
 
-    @include mixin.H3();
+    @include mixin.Texts();
 
     // TESTE DE POSITION
 
