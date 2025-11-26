@@ -18,6 +18,10 @@ function Main() {
               De Belo Horizonte e Betim a qualquer ponto de Minas Gerais, entregamos soluções completas em energia solar.
             </h2>
           </div>
+          <h3 className={S.titleH3}>
+              Reduza sua conta de luz, valorize seu imóvel e invista em um futuro sustentável.
+              Fale agora com um dos nossos especialistas e descubra o projeto ideal para você.
+            </h3>
           <div className={S.homeBtn}>
             <a href="#budget">Quero economizar!</a>
           </div>
