@@ -18,6 +18,9 @@ function Main() {
               De Belo Horizonte e Betim a qualquer ponto de Minas Gerais, entregamos soluções completas em energia solar.
             </h2>
           </div>
+          <div className={S.homeBtn}>
+            <a href="#budget">Quero economizar!</a>
+          </div>
         </div>
       </section>
       <section className={S.forms}>

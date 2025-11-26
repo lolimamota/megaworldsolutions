@@ -1,6 +1,6 @@
 @use '../SCSS/mixins.module.scss' as mixin;
 
-.imgBg{
+.imgBg {
     background-image: url('../../assets/bg.jpeg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -8,36 +8,52 @@
     height: 100vh;
 };
 
-.orangeBg{
+.orangeBg {
     background-color: mixin.$secondColor;
     clip-path: ellipse(90% 150% at bottom left);
     height: 100vh;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-}
 
-.homeText{
-    border: solid purple;
-    width: 60%;
-    grid-column: 1/3;
-    grid-row: 2/3;
-    margin-left: 10vw;
-}
+    .homeText {
+        width: 60%;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin-left: 10vw;
+    };
 
-.titleH1{
+    .homeBtn {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        text-align: center;
+        
+
+        a{
+            border: solid .1vw purple;
+            border-radius: 12px;
+            text-decoration: none;
+            color: mixin.$firstColor;
+            padding: 2vh;
+
+            @include mixin.H3();
+        }
+    };
+};
+
+
+
+.titleH1 {
     color: mixin.$firstColor;
-
     @include mixin.H1();
-}
+};
 
-.titleH2{
+.titleH2 {
     color: mixin.$firstColor;
-
     @include mixin.H2();
-}
+};
 
-.forms{
+.forms {
     border: solid red;
-}
+};
