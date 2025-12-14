@@ -31,21 +31,29 @@ function Main() {
       <h2>
         Preencha o cadastro e entraremos em contato com você o mais breve possível!
       </h2>
-      <form action="">
-        <label htmlFor="nome-sobrenome">Nome e sobrenome?</label>
-        <input type="text" id='nome-sobrenome' name='nome-sobrenome' required/>
+      <form action="" className={S.forms}>
+      {/* <form> */}
+        <label htmlFor="nome-sobrenome">Nome e sobrenome?
+          <input type="text" id='nome-sobrenome' name='nome-sobrenome' required/>
+        </label>
+        
 
-        <label htmlFor="telefone">Telefone de contato?</label>
-        <input type="tel" id='telefone' name='telefone' pattern='\([0-9]{2}\) 9 [0-9]{4}-[0-9]{4}' required/>
+        <label htmlFor="telefone">Telefone de contato?
+          <input type="tel" id='telefone' name='telefone' pattern='\([0-9]{2}\) 9 [0-9]{4}-[0-9]{4}' required/>
+        </label>
+        
 
-        <label htmlFor="email">Email?</label>
-        <input type="email" id='email' name='email' required/>
+        <label htmlFor="email">Email?
+          <input type="email" id='email' name='email' required/>
+        </label>
 
-        <label htmlFor="estado">Estado?</label>
-        <input type="text" id='estado' name='estado' required />
+        <label htmlFor="estado">Estado?
+          <input type="text" id='estado' name='estado' required />
+        </label>
 
-        <label htmlFor="cidade">Cidade?</label>
-        <input type="text" id='cidade' name='cidade' required />
+        <label htmlFor="cidade">Cidade?
+          <input type="text" id='cidade' name='cidade' required />
+        </label>
 
         <label htmlFor="conta">Valor da última conta de luz?
         <select name="conta" id="cidade" required>

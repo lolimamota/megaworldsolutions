@@ -154,6 +154,12 @@
 
     .forms {
         border: solid red;
-        width: 100vw;
-        height: 100vh;
+        
+
+        label{
+            width: 100vw;
+
+            @include mixin.H3();
+            @include mixin.flex($justify: space-evenly)
+        }
     }
