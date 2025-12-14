@@ -13,6 +13,24 @@
     position: fixed;
     top: 0px;
     z-index: 1000;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px; // Estende um pouco além do header
+        left: 0;
+        right: 0;
+        height: 20px; // Altura da transição
+        background: linear-gradient(to bottom,
+                mixin.$headerColor 
+                rgba(255, 255, 255, 0) 100% // Termina completamente transparente
+            );
+        backdrop-filter: blur(15px);
+        mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+        pointer-events: none; // Permite clicar através do degradê
+        z-index: -1;
+    }
 }
 
 ;
