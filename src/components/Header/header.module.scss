@@ -1,9 +1,9 @@
 @use '../SCSS/mixins.module.scss' as mixin;
 
-.headerStyle{
-    padding: 5vw;
+.headerStyle {
+    padding: 2em;
     background-color: mixin.$headerColor;
-
+    backdrop-filter: blur(15px); // Efeito de desfoque no conteúdo atrás
     width: 100%;
 
     @include mixin.flex($justify: space-around);
@@ -13,12 +13,14 @@
     position: fixed;
     top: 0px;
     z-index: 1000;
-};
+}
 
-.menuUl{
+;
+
+.menuUl {
     width: 30vw;
 
-    a{
+    a {
         text-decoration: none;
         color: mixin.$firstColor;
 
@@ -26,12 +28,14 @@
     }
 
     @include mixin.flex($justify: space-between);
-};
+}
 
-.logoFig{
+;
+
+.logoFig {
     width: 10vw;
 
-    img{
+    img {
         width: 5vw;
     }
 
