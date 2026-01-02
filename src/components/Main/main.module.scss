@@ -186,18 +186,19 @@
             height: 5vh;
             border-radius: 25px ;
             border: solid mixin.$secondColor;
-
-            &::placeholder{
-                padding-left: 1rem;
-                color: mixin.$secondColor;
-
-                @include mixin.H2();
-            };
-
-            &:focus{
+        };
+        
+        input, select:focus{
             outline: none;
             border: solid mixin.$secondColor;
-            };
         };
+
+        input, select ::placeholder{
+            padding-left: 1rem;
+            color: mixin.$secondColor;
+            font-weight: bolder;
+
+            @include mixin.H2($fontweight:400);
+    }
 }
 }

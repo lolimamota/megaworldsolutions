@@ -1,19 +1,19 @@
-@mixin H1($fontsize: clamp(3rem, 3vw, 4rem)) {
+@mixin H1($fontsize: clamp(3rem, 3vw, 4rem), $fontweight:400) {
     font-size: $fontsize;
-    font-weight: 400
+    font-weight: $fontweight;
 };
 
-@mixin H2($fontsize: clamp(1rem, 3vw, 2rem)) {
+@mixin H2($fontsize: clamp(1rem, 3vw, 2rem), $fontweight:300) {
     font-size: $fontsize;
-    font-weight: 300
+    font-weight: $fontweight;
 };
 
-@mixin H3($fontsize: clamp(1.6rem, 3vw, 1.9rem)) {
+@mixin H3($fontsize: clamp(1.6rem, 3vw, 1.9rem), $fontweight:200) {
     font-size: $fontsize;
-    font-weight: 200
+    font-weight: $fontweight;
 };
 
-@mixin Texts($fontsize: clamp(1.3rem, 3vw, 1.5rem)) {
+@mixin Texts($fontsize: clamp(1.3rem, 3vw, 1.5rem), $fontweight:100) {
     font-size: $fontsize;
-    font-weight: 100
+    font-weight: $fontweight;
 };
