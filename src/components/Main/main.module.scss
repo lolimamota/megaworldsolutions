@@ -98,7 +98,7 @@
 
         a {
             display: inline-block;
-            border: .1vw mixin.$footerColor;
+            border: .1vw solid mixin.$footerColor;
             border-radius: 12px;
             text-decoration: none;
             color: mixin.$firstColor;
@@ -152,63 +152,52 @@
     @include mixin.H2();
 }
 
-.forms {
+.forms{
     // border: solid red;
-    // display: grid;
-    // grid-template-columns: repeat(4, 1fr);
-    // grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
 
-    
-    // border: solid red;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: repeat(3, 1fr);
-    // align-content: space-around;
-    // justify-content: space-around;
-    // justify-items: center;
-    
-    // h2{
-    //     grid-column: 1/4;
-    //     grid-row: 1/2;
-    // };
+    @include mixin.flex($gap: 20px , $justify: center , $direction: column );
 
-    // .labels{
-    //     @include mixin.H3();
-    //     @include mixin.flex($justify: space-evenly, $direction: column, $align: stretch);
-    //     grid-column: 2/3;
-    // }
-    border: solid red;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
+    .subtitleForms{
+        // border: solid blue;
+        padding: 1rem 2rem 0 2rem;
+        color: mixin.$firstColor;
+        margin-bottom: 30px;
 
-.subtitleForms{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    text-align: center;
-    align-content: center;
-    @include mixin.H2();
+        @include mixin.H1();
+    }
 }
 
 .labels{
-    border: solid purple;
-    grid-column: 2/3;
+    // border: solid green;
+    width: 90%;
 
-    @include mixin.H3();
-    @include mixin.flex($direction: column, $gap: 1vh);
+    @include mixin.flex($gap:1rem , $direction: column);
 
-    // label{
-    //     text-align: start;
-    // }
-    // input{
-    //     margin-left: 2vw;
-    // }
+    .divTeste{
+        // border: solid yellow;
+        width: 80%;
+
+        @include mixin.H2();
+        @include mixin.flex($justify: space-between);
+
+        input, select{
+            width: 40vw;
+            height: 5vh;
+            border-radius: 25px ;
+            border: solid mixin.$secondColor;
+
+            &::placeholder{
+                padding-left: 1rem;
+                color: mixin.$secondColor;
+
+                @include mixin.H2();
+            };
+
+            &:focus{
+            outline: none;
+            border: solid mixin.$secondColor;
+            };
+        };
 }
-
-.divTeste{
-    border: solid green;
-    width: 100%;
-
-    @include mixin.flex($justify: space-between)
 }
