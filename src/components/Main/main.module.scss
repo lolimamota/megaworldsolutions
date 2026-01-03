@@ -98,7 +98,7 @@
 
         a {
             display: inline-block;
-            border: .1vw solid mixin.$footerColor;
+            border: .1vw mixin.$footerColor;
             border-radius: 12px;
             text-decoration: none;
             color: mixin.$firstColor;
@@ -193,12 +193,16 @@
             border: solid mixin.$secondColor;
         };
 
-        input, select ::placeholder{
+        input, select, option::placeholder{
             padding-left: 1rem;
             color: mixin.$secondColor;
             font-weight: bolder;
 
             @include mixin.H2($fontweight:400);
+    }
+
+    option{
+        text-align: center;
     }
 }
 }
