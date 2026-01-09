@@ -193,10 +193,9 @@
             border: solid mixin.$secondColor;
         };
 
-        input, select, option::placeholder{
+        input, select, option, input::placeholder{
             padding-left: 1rem;
             color: mixin.$secondColor;
-            font-weight: bolder;
 
             @include mixin.H2($fontweight:400);
     }

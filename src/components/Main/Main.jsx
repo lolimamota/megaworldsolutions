@@ -35,31 +35,31 @@ function Main() {
           <div className={S.divTeste}>
             <label htmlFor="nome-sobrenome">Nome e sobrenome?
             </label>
-            <input type="text" id='nome-sobrenome' name='nome-sobrenome' required />
+            <input type="text" id='nome-sobrenome' name='nome-sobrenome' placeholder='Digite seu nome e sobrenome' required />
           </div>
 
           <div className={S.divTeste}>
-            <label htmlFor="telefone">Telefone de contato?
+            <label htmlFor="phone">Telefone de contato?
             </label>
-            <input type="tel" id='telefone' name='telefone' pattern='\([0-9]{2}\) 9 [0-9]{4}-[0-9]{4}' required />
+            <input type="tel" id='phone' name='phone' pattern='\([0-9]{2}\) 9[0-9]{4}-[0-9]{4}' placeholder='(XX) 9 XXXX-XXXX'required />
           </div>
 
           <div className={S.divTeste}>
             <label htmlFor="email">Email?
             </label>
-            <input type="email" id='email' name='email' required />
+            <input type="email" id='email' name='email' placeholder='email@email.com' required />
           </div>
 
           <div className={S.divTeste}>
             <label htmlFor="estado">Estado?
             </label>
-            <input type="text" id='estado' name='estado' required />
+            <input type="text" id='estado' name='estado' placeholder='Ex.: Minas Gerais' required />
           </div>
 
           <div className={S.divTeste}>
             <label htmlFor="cidade">Cidade?
             </label>
-            <input type="text" id='cidade' name='cidade' required />
+            <input type="text" id='cidade' name='cidade' placeholder='Ex.: Belo Horizonte' required />
           </div>
 
           <div className={S.divTeste}>
